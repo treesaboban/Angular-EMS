@@ -1,0 +1,76 @@
+<!-- <p>employee-manager works!</p> -->
+<!-- system date and time  -->
+<!-- <p>Login Details : {{loginDate | date :'medium'}}</p> -->
+<div class="container">
+    <!-- row 1 -->
+    <div class="row">
+        <div class="col">
+            <h3 class="text-dark text-center m-4">Employee Management System</h3>
+            <!-- <img src="https://th.bing.com/th/id/R.be71e152189b847e15eda1b575cef520?rik=8Nd0wTJLcl6fWg&riu=http%3a%2f%2fdanieleberetta.com%2fwp-content%2fuploads%2f2019%2f03%2fmanagement.jpg&ehk=DNIq7qsY343uKmdEu0lt6B3%2bZ6mQ3kbKwCtE8AFU2Mo%3d&risl=&pid=ImgRaw&r=0" class="img-fluid" alt="..."> -->
+             <p style="text-align:justify"> 
+                Employee management is the process by which employers ensure workers perform their jobs to the best of
+                their abilities so as to achieve business goals.
+                It typically entails building and maintaining healthy relationships with employees, as well as
+                monitoring their daily labor and measuring progress.
+            </p> 
+            <!-- <a routerLink="/ems/add" class="addbtn btn btn-success p-2" style="float:right">
+                <i class="fa-sharp fa-solid fa-user-plus"></i>&nbsp;Employee
+            </a> -->
+        </div>
+    </div>
+    <!-- row 2 -->
+    <div class="row">
+        <div class="col-6">
+            <input (change)="search($event)" type="text" id="search" class="form-control" placeholder="Search Employee">
+        </div>
+        <div class="col-6">
+            <!-- <button class="">Search</button> -->
+            <a routerLink="/ems/add" class="addbtn btn btn-success p-2" style="float:right">
+                <i class="fa-sharp fa-solid fa-user-plus"></i>&nbsp;Employee
+            </a>
+        </div>
+    </div>
+    <!-- <h3>{{heading}}</h3> -->
+    <!-- <pre>{{allEmployee | json}}</pre> -->
+    <!-- card  -->
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-6" id="c1"
+                *ngFor="let employee of allEmployee | filter:searchKey:'name' | paginate: { itemsPerPage: 4, currentPage: p }">
+                <div class="card mt-5">
+                    <div class="card-body  p-5">
+                        <div class="row">
+                            <div class="col-4">
+                                <!-- property binding  -->
+                                <img [src]="employee.photo" class="rounded-circle" alt="" width="200px" height="200px">
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Ecode : {{employee.emp_code}}
+                                        <a routerLink="/ems/view/{{employee.id}}" style="float: right;"
+                                            class="text-success"><i class="fa-sharp fa-solid fa-eye"></i></a>
+                                    </li>
+                                    <li class="list-group-item">Name : {{employee.name}}
+                                        <a routerLink="/ems/update/{{employee.id}}" style="float: right;"
+                                            class="text-primary"><i class="fa-sharp fa-solid fa-pen-to-square"></i></a>
+                                    </li>
+                                    <li class="list-group-item">Email : {{employee.email}}
+                                        <a type="button" class="text-danger" (click)="deleteEmployee(employee.id)"
+                                            routerLink="" style="float: right;">
+                                            <i class="fa-sharp fa-solid fa-trash"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pagination  -->
+        <div class="page mt-8 py-5 flex justify-center items-center">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+        <!-- pagination  -->
+    </div>
+</div>

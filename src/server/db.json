@@ -1,0 +1,122 @@
+{
+  "employee": [
+    {
+      "emp_code": "E101",
+      "name": "Treesa Boban",
+      "gender": "female",
+      "dob": "1999-03-01",
+      "email": "treesaboban@gmail.com",
+      "phone": "09888990090",
+      "salary": "30000",
+      "photo": "https://th.bing.com/th/id/R.3e7876088631d31eccbaf496709dcbb8?rik=88sH8mhycIWYuQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fb%2fZ%2fW%2fQ%2f9%2fs%2fuser-icon-female-white-hi.png&ehk=akSoJDs%2fPc84pobZSUbSrhWPK3138bJgoFkUDkKRzgo%3d&risl=&pid=ImgRaw&r=0",
+      "roleId": "1",
+      "id": 1
+    },
+    {
+      "emp_code": "E102",
+      "name": "Maria Ninu",
+      "gender": "female",
+      "dob": "1999-06-24",
+      "email": "maria@gmail.com",
+      "phone": "07909197336",
+      "salary": "20000",
+      "photo": "https://th.bing.com/th/id/R.3e7876088631d31eccbaf496709dcbb8?rik=88sH8mhycIWYuQ&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2fb%2fZ%2fW%2fQ%2f9%2fs%2fuser-icon-female-white-hi.png&ehk=akSoJDs%2fPc84pobZSUbSrhWPK3138bJgoFkUDkKRzgo%3d&risl=&pid=ImgRaw&r=0",
+      "roleId": "2",
+      "id": 2
+    },
+    {
+      "emp_code": "E103",
+      "name": "Tomson Martin",
+      "gender": "male",
+      "dob": "1998-05-05",
+      "email": "tomsonmartin18@gmail.com",
+      "phone": "07994691933",
+      "salary": "40000",
+      "photo": "https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=Ql6UUNosrWAY0w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-user-icon-icons-logos-emojis-users-2400.png&ehk=8agkVrs8bo9zafVF9Qk4%2bFqv5IwaEZrb8DwX%2ftfJtNc%3d&risl=&pid=ImgRaw&r=0",
+      "roleId": "3",
+      "id": 3
+    },
+    {
+      "emp_code": "E104",
+      "name": "Nevin Paul",
+      "gender": "male",
+      "dob": "1998-10-07",
+      "email": "nevin@gmail.com",
+      "phone": "08877665544",
+      "salary": "40000",
+      "photo": "https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=Ql6UUNosrWAY0w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-user-icon-icons-logos-emojis-users-2400.png&ehk=8agkVrs8bo9zafVF9Qk4%2bFqv5IwaEZrb8DwX%2ftfJtNc%3d&risl=&pid=ImgRaw&r=0",
+      "roleId": "3",
+      "id": 4
+    },
+    {
+      "emp_code": "E105",
+      "name": "Rojan",
+      "gender": "male",
+      "dob": "1995-03-10",
+      "email": "rojan@gmail.com",
+      "phone": "08877665544",
+      "salary": "40000",
+      "photo": "https://th.bing.com/th/id/R.6b0022312d41080436c52da571d5c697?rik=Ql6UUNosrWAY0w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-user-icon-icons-logos-emojis-users-2400.png&ehk=8agkVrs8bo9zafVF9Qk4%2bFqv5IwaEZrb8DwX%2ftfJtNc%3d&risl=&pid=ImgRaw&r=0",
+      "roleId": "5",
+      "id": 5
+    },
+    {
+      "emp_code": "E106",
+      "name": "Khanza P",
+      "gender": "female",
+      "dob": "1999-12-12",
+      "email": "khanza@gmail.com",
+      "phone": "8877221133",
+      "salary": "40000",
+      "photo": "https://th.bing.com/th/id/OIP.dNV1MgwxlRjUMEy08rvDxAAAAA?pid=ImgDet&w=177&h=226&c=7&dpr=1.3",
+      "roleId": "1",
+      "id": 6
+    },
+    {
+      "emp_code": "E107",
+      "name": "Amal S",
+      "gender": "male",
+      "dob": "2002-07-29",
+      "email": "amal@gmail.com",
+      "phone": "889977665",
+      "salary": "40000",
+      "photo": "https://th.bing.com/th/id/R.6e1b5fe53f92f6b5111e6f74ecc1cd65?rik=P8x4VYysVuPZLQ&riu=http%3a%2f%2fwww.misbeliever.com%2fimages%2fAhd-200x250.jpg&ehk=EvBpuK3LrVko1EL0od6Lg7RzAqksZSfrBRkfL9mDHIQ%3d&risl=&pid=ImgRaw&r=0",
+      "roleId": "1",
+      "id": 7
+    },
+    {
+      "emp_code": "E108",
+      "name": "Amritha",
+      "gender": "female",
+      "dob": "1995-01-10",
+      "email": "amritha@gmail.com",
+      "phone": "8899113344",
+      "salary": "40000",
+      "photo": "https://th.bing.com/th/id/OIP.dNV1MgwxlRjUMEy08rvDxAAAAA?pid=ImgDet&w=177&h=226&c=7&dpr=1.3",
+      "roleId": "1",
+      "id": 8
+    }
+  ],
+  "role": [
+    {
+      "id": "1",
+      "name": "angular developer"
+    },
+    {
+      "id": "2",
+      "name": "tester"
+    },
+    {
+      "id": "3",
+      "name": "react developer"
+    },
+    {
+      "id": "4",
+      "name": "python developer"
+    },
+    {
+      "id": "5",
+      "name": "java developer"
+    }
+  ]
+}

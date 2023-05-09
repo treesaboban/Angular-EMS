@@ -1,0 +1,156 @@
+Employee Management system
+    -add
+    -view
+    -update
+    -delete
+index  emp_code name gender email phone dob Role salary photo
+
+  1 ng new employee-management
+  2 cd employee-management
+  3 code .
+  4 ng serve --open
+Install bootstrap,fontawesome & google fontawesome
+-> npm i bootstrap -(check in package.json)
+       paste the following links in index.html,inside <head> -(optional)
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    -> npm i @fortawesome/fontawesome-free
+       paste the following links in index.html,inside <head> -(optional)
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 6 To configure bootstrap,fontawesome and google in angular.json:
+     ---bootstrap---
+     node modules->(after all @) bootstrap->dist>css->select bootstrap.min.css(right click & copy relative path)
+      angular.json->"styles":->paste the copied relative path->(error : \ change to /)
+
+     node modules->bootstrap->dist->js->bootstrap.bundle.js(right click & copy relative path)
+     angular.json->"scripts":->paste the copied relative path->(error : \ change to /)
+
+     ---fontawesome---
+     node modules->@fortawesome\fontawesome-free->css->all.css(right click & copy relative path)
+     angular.json->"styles":->paste the copied relative path->(error : \ change to /)
+7  create components
+       -> employeeManager - to view all employees and manage
+          ng g c employeeManager 
+       -> addEmployee - to add new employees
+          ng g c addEmployee 
+       -> updateEmployee - to update an employee
+          ng g c updateEmployee 
+       -> viewEmployee - to view particular employee
+          ng g c viewEmployee 
+
+->page_not_found create and design-----------------------not
+->navigation bar create and design
+In angular instead of href we user routerLink
+->employeeManager page design
+->view page design
+->update page design
+->add page design
+
+   8 API creation
+      -create our own json file
+      -goto jsonplaceholder site -> create my json server
+   9 create folder for backend
+       -create server folder inside the project(src-server folder-db.json)
+       -create db.json file in server folder
+       -add our own content to the db.json file
+   10 In server folder, create package.json 
+         -create package.json file-npm init
+         -create json server- npm i json-server
+         -npm start
+           (error)
+           update package.json file script as
+              "scripts":
+                {
+                 "start": "json-server --watch db.json --port 3000"
+                }
+           -npm start
+            (error)
+           update package.json file script as
+              "scripts":
+                {
+                 "start": "json-server --watch db.json --port 3000"
+                }
+           -npm start
+   11 create model for employee and role
+           create model folder in src folder
+           create employee.ts file
+           create role.ts file
+   12 To fetch data-Asynchronous resolving
+          JS                             TS
+          promise                        observable (method of rxjs lib)
+          fetch('url')                    rxjs library                                       
+           .then()------------------------.subscribe()   (method of observable)
+    13 APIs creation
+         eg: view employee
+             update employee
+   14 Service creation
+        pass data from one component to another
+        If component shares same data then we create a service
+
+            ng g s services/api
+   15 TO get http methods -get,post,put,patch & delete
+        import HttpClientModule in app.module.ts
+   16 Dependancy inject httpClient in API services 
+          (used when 2 dependant classes shares data)
+   17 Data Binding(data sharing inside a component)
+          Html(view) ->ts(component) and ts(component)->Html(view)
+          (1) One-Way Data Binding
+                a) component to view (ts->html)
+                    i) String Interpolation -syntax :- {{variable_name}}
+                     ii) Property Binding -syntax :- [attribute]="property_name"
+               b) view(html)-component(ts)
+                   i) Event Binding- syntax:- (event)="function_name()"
+                   ii)event Binding using $event- syntax:- (event)="function_name($event)"
+          (2) Two-way Data Binding
+               1)ngModel
+                   -import FormsModule in appModule
+                   -syntax :- [(ngModel)]="property_name"
+    18 Directives - To manipulate DOM content
+            (1) Component directives
+            (2) Structural directives - to add or remove html elements based on some conditions
+                 i) *ngIf="conditions"
+                 ii) *ngFor="let var_name of array_name"
+   19 Activated Route //class- viewEmployee - to pass id to the url
+              Provides access to information about a route associated with a component that is loaded in an outlet. 
+              Use to traverse the RouterState tree and extract information from nodes.
+            
+         -> params: Observable<Params> //params is a method- Declared in Constructor
+            An observable of the matrix parameters scoped to this route.
+
+    20 Angular Pipes - Transforming Data using Pipes
+         
+         Use pipes to transform strings, currency amounts, dates, and other data for display. Pipes are simple functions to use in template expressions to accept an input value and return a transformed value. 
+         Pipes are useful because you can use them throughout your application, while only declaring each pipe once.
+         eg: date
+
+         create a pipe for searching
+          
+          syntax :- ng g p pipe_folder/pipe_name
+                    ng g p pipes/filter
+
+
+
+
+
+
+             // "role": [
+    //     {
+    //       "id": "1",
+    //       "name": "angular developer"
+    //     },
+    //     {
+    //       "id": "2",
+    //       "name": "tester"
+    //     },
+    //     {
+    //       "id": "3",
+    //       "name": "react developer"
+    //     },
+    //     {    "id": "4",
+    //         "name":"python developer"
+    //     },
+    //     {    "id": "5",
+    //         "name":"java developer"
+    //     }
+    //   ]

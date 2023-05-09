@@ -1,0 +1,14 @@
+/* .image-icon
+{
+    width:300px ;
+    height:300px;
+} */
+h3{
+    text-shadow: 2px 2px 5px rgb(70, 180, 30);
+}
+form{
+    border-radius: 25px;
+    border: 2px solid #035310;
+    box-shadow: 20px 30px 40px #037801; 
+    padding: 40px 20px;
+}

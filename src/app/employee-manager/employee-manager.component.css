@@ -1,0 +1,38 @@
+.page
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .addbtn
+{
+    background-color: rgb(6, 184, 54);
+} */
+#search
+{
+ border-color: rgb(27, 169, 5);
+ border-width: medium;
+}
+h3{
+    text-shadow: 2px 2px 5px rgb(70, 180, 30);
+}
+.card
+{
+  border-radius: 25px;
+  border: 2px solid #035310;
+  box-shadow: 10px 10px 10px #037801; 
+}
+#c1 :hover{
+    transform: scale(1.05);
+}
+.list-group-item
+{
+    background-color: rgb(203, 241, 106);
+    box-shadow: 20px 30px 40px;
+    /* border: 2px solid #5fef77; */
+}
+.img-fluid
+{
+    width: 100%;
+    height: 500px;
+}
